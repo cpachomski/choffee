@@ -1,16 +1,16 @@
 <?php
 /*
 # =================================================
-# blog-hero.php
+# blog-index-hero.php
 #
-# The theme's main blog hero partial
+# The theme's main blog index hero partial
 # =================================================
 */
 ?>
 
-<div class="blog-hero-container">
+<div class="blog-index-hero-container">
   <div class='hero'>
-    <h1>Choffee</h1>
     <p>I need help functioning</p>
+    <h1><span>Choffee</span></h1>
   </div>
 </div>

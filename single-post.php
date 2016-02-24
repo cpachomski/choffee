@@ -10,7 +10,7 @@
 
 <?php get_header(); ?>
 <div class='container'>
-  <?php get_template_part('partials/blog', 'hero'); ?>
+  <?php get_template_part('partials/blog', 'post-hero'); ?>
   <div class='post-container'>
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
     <div class='post'>

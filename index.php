@@ -12,6 +12,6 @@
 
 
  <div class='container'>
-  <?php get_template_part('partials/blog', 'hero'); ?>
+  <?php get_template_part('partials/blog', 'index-hero'); ?>
 
  </div>

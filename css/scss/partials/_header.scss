@@ -1,7 +1,8 @@
 #showPushNav {
   position: absolute;
   left: 50px;
-  top: 40px;
+  top: 64px;
+  z-index: 1000;
   &:hover {
     cursor: pointer;
   }
