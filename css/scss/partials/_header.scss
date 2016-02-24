@@ -1,0 +1,78 @@
+#showPushNav {
+  position: absolute;
+  left: 50px;
+  top: 40px;
+  &:hover {
+    cursor: pointer;
+  }
+  > i {
+    color: $brown;
+    font-size: 50px;
+  }
+}
+
+nav, body {
+  transition: left 0.3s ease-out;
+}
+
+body {
+  overflow-x: hidden;
+  position: relative;
+  left: 0px;
+
+  &.pushed {
+    left: 300px;
+  }
+}
+
+nav {
+  background-color: $brown;
+  position: fixed;
+  width: 300px;
+  height: 100%;
+  top: 0;
+  z-index: 1000;
+  left: -300px;
+
+  &.open {
+    left: 0px;
+  }
+
+
+  .logo {
+    > h1 {
+      font-family: "Italiana", serif;
+      text-align: center;
+      color: $pink-sand;
+      font-size: 50px;
+      text-transform: uppercase;
+    }
+  }
+
+
+  .menu {
+    margin-top: 107px;
+    a {
+      text-decoration: none;
+      display: block;
+      line-height: 40px;
+      text-align: left;
+      padding: 0px 55px;
+      color: $pink-sand;
+      border-top: 5px solid $brown;
+      border-bottom: 5px solid $brown;
+      transition: padding-left 0.3s ease-out;
+      font-family: "Lato", serif;
+      text-transform: uppercase;
+
+      &:hover {
+        background-color: $sand;
+        border-color: $pink-sand !important;
+        color: $brown;
+        padding-left: 100px;
+      }
+
+    }
+  }
+
+}
