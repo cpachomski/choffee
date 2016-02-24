@@ -2,6 +2,7 @@
 
   function style_assets() {
     wp_enqueue_style( 'font-aweseoe', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
+    wp_enqueue_style( 'foundation5', 'http://cdn.foundation5.zurb.com/foundation.css');
     wp_enqueue_style('google-fonts', 'https://fonts.googleapis.com/css?family=Italiana|Lato');
     wp_enqueue_style( 'theme-style', get_stylesheet_uri(), array('main.css'));
     wp_enqueue_style( 'compiled-styles', get_stylesheet_directory_uri() . '/css/main.css');
