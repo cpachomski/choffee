@@ -1,5 +1,10 @@
 <?php
 
+
+  function register_main_nav_menu() {
+    register_nav_menu('main-nav', __('Main Nav Menu'));
+  }
+
   function style_assets() {
     wp_enqueue_style( 'font-aweseoe', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css');
     wp_enqueue_style( 'foundation5', 'http://cdn.foundation5.zurb.com/foundation.css');
@@ -13,6 +18,7 @@
     wp_enqueue_script( 'slider-nav', get_stylesheet_directory_uri() . '/js/nav-slider.js', array('jquery') );
   }
 
+  add_action('init', 'register_main_nav_menu');
   add_action('wp_enqueue_scripts', 'style_assets');
   add_action('wp_enqueue_scripts', 'script_assets');
 

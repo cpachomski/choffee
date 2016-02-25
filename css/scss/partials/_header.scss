@@ -1,79 +1,55 @@
-#showPushNav {
-  position: absolute;
-  left: 50px;
-  top: 64px;
-  z-index: 1000;
-  &:hover {
-    cursor: pointer;
-  }
-  > i {
-    color: $brown;
-    font-size: 50px;
-  }
-}
+header{
+  background-color: $pink-sand;
+  margin-top: -25px;
 
-nav, body {
-  transition: left 0.3s ease-out;
-}
-
-body {
-  overflow-x: hidden;
-  position: relative;
-  left: 0px;
-
-  &.pushed {
-    left: 300px;
-  }
-}
-
-nav {
-  background-color: $brown;
-  position: fixed;
-  width: 300px;
-  height: 100%;
-  top: 0;
-  z-index: 1000;
-  left: -300px;
-
-  &.open {
-    left: 0px;
-  }
-
-
-  .logo {
+  .hero {
     > h1 {
-      font-family: "Italiana", serif;
+      padding: 25px 0px;
       text-align: center;
-      color: $pink-sand;
-      font-size: 50px;
-      text-transform: uppercase;
+      margin-bottom: 0px;
+       > span {
+          color: $sand;
+          font-size: 40px;
+          text-transform: uppercase;
+          font-family: 'Italiana', serif;
+          position: relative;
+          z-index: 3;
+          font-weight: bold;
+          &:after {
+            animation: logo_underline 3s ease-out forwards;
+            content: '';
+            position: absolute;
+            bottom: 0px;
+            right: -10px;
+            background-color: $brown;
+            z-index: -1;
+          }
+       }
     }
   }
 
-
-  .menu {
-    margin-top: 107px;
-    a {
-      text-decoration: none;
-      display: block;
-      line-height: 40px;
-      text-align: left;
-      padding: 0px 55px;
-      color: $pink-sand;
-      border-top: 5px solid $brown;
-      border-bottom: 5px solid $brown;
-      transition: padding-left 0.3s ease-out;
-      font-family: "Lato", serif;
-      text-transform: uppercase;
-
-      &:hover {
-        background-color: $sand;
-        border-color: $pink-sand !important;
-        color: $brown;
-        padding-left: 100px;
-      }
-
-    }
+}
+@keyframes logo_underline {
+  0% {
+    width: 0px;
+    height: 5%;
   }
+  30% {
+    width: calc(100% + 20px);
+    height:  5%;
+  }
+  100% {
+    width: calc(100% + 20px);
+    height: 100%;
+    border-radius: 2px;
+  }
+}
 
+@keyframes color_blend {
+  from {
+    color: $pink-sand;
+  }
+  to {
+    color: $sand;
+  }
 }

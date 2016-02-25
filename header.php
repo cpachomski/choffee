@@ -21,15 +21,8 @@
     <?php wp_head(); ?>
 </head>
 
-
- <span id='showPushNav'><i class="fa fa-bars"></i></span>
-<nav>
-  <div class='logo'><h1>Choffee</h1></div>
-
-  <div class='menu'>
-    <a href="">Home</a>
-    <a href="">Latest Article</a>
-    <a href="">About Me</a>
-    <a href="">Social Share</a>
+<header class="blog-index-hero-container">
+  <div class='hero'>
+    <h1><span>Choffee</span></h1>
   </div>
-</nav>
+</header>
