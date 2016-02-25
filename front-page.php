@@ -8,12 +8,5 @@
 */
  ?>
 
- <?php get_header(); ?>
-
-<div class='container'>
-
-
-
-
-
-</div>
+<?php get_header(); ?>
+<?php get_template_part('partials/desktop', 'nav'); ?>
