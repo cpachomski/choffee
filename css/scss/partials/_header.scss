@@ -1,10 +1,10 @@
 header{
-  background-color: $pink-sand;
+  background-color: $sherbert;
   margin-top: -25px;
 
   .hero {
     > h1 {
-      padding: 25px 0px;
+      padding: 50px 0px;
       text-align: center;
       margin-bottom: 0px;
        > span {
@@ -14,7 +14,7 @@ header{
           font-family: 'Italiana', serif;
           position: relative;
           z-index: 3;
-          font-weight: bold;
+        font-weight: bold;
           &:after {
             animation: logo_underline 3s ease-out forwards;
             content: '';
