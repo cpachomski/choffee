@@ -18,7 +18,7 @@
       <?php get_template_part('partials/most', 'recent-sidebar'); ?>
     </div>
     <div class='row'>
-      <?php get_template_part('partials/newsletter', 'signup'); ?>
+      <?php get_template_part('partials/newsletter', 'subscribe'); ?>
     </div>
   </div>
 </div>
