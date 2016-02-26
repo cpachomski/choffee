@@ -1,10 +1,13 @@
 @import 'variables';
 @import 'normalize';
+@import 'mixins/buttons';
 @import 'partials/header';
 @import 'partials/desktop-nav';
 @import 'partials/latest-posts';
 @import 'partials/helpers';
 @import 'partials/newsletter-subscribe';
+
+
 
 
 
@@ -14,10 +17,11 @@ html,  body {
 
 .content {
   padding: 50px 0px;
-  background-color: $sand;
+  background-color: white;
   z-index: -2;
-
-
 }
 
+input:focus{
+  outline: 0 !important;
+}
 

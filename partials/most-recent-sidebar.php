@@ -3,7 +3,7 @@
 # =================================================
 # most-viewed-sidebar.php
 #
-# The theme's most viewed sidebar block
+# The theme's most viewed most-viewed-sidebar block
 # =================================================
 */
 ?>
