@@ -21,4 +21,7 @@
 
   </div>
       <?php get_template_part('partials/newsletter', 'subscribe'); ?>
+
+
+  <?php get_template_part('partials/instagram', 'bar'); ?>
 </div>
