@@ -1,0 +1,33 @@
+.section-topper {
+      margin-bottom: 50px;
+
+      h6 {
+        position: relative;
+        text-align: center;
+        font-family: 'Italiana', serif;
+        &:after {
+          content: '';
+          position: absolute;
+          top: 50%;
+          width: 100%;
+          left: 0px;
+          border-top: 1px solid $brown;
+          background-color: $brown;
+          z-index: 1;
+
+        }
+
+        > span {
+          color: white;
+          padding: 5px 25px;
+          font-family: 'Italiana', serif;
+          font-size: 20px;
+          font-weight: 900;
+          position: relative;
+          background-color: $brown;
+          text-transform: uppercase;
+          z-index: 5;
+
+        }
+      }
+  }

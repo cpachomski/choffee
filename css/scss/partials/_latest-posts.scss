@@ -1,0 +1,121 @@
+.latest-posts{
+
+  .blog-entry {
+    margin-bottom: 25px;
+    transition: all .2s ease-out;
+    padding-bottom: 25px;
+    position: relative;
+    margin: 0px 0px 25px 0px;
+
+    &:hover, &:active {
+      cursor: pointer;
+
+    }
+
+    article {
+      height: 100%;
+      width: 100%;
+      position: relative;
+      overflow: auto;
+      zoom: 1;
+
+      &:after, &:before {
+          content: '';
+          position: absolute;
+          height: 0%;
+          width: 1px;
+          transition: height .4s ease-out;
+      }
+
+      &:before {
+          background-color: $brown;
+          right: 2px;
+          bottom: 0px;
+      }
+
+      &:after {
+          right: 4px;
+          top: 0px;
+          background-color: $brown;
+      }
+
+      &:hover {
+        cursor: pointer;
+
+
+        &:before, &:after{
+          height: 100%;
+        }
+
+
+      }
+
+      .post-media-col {
+
+          padding: 0px 15px;
+          padding-left: 0px !important;
+          a.post-media {
+                outline: 0 none !important;
+                text-decoration: none !important;
+                display: block;
+                > div.post-thumbnail {
+                    min-height: 200px;;
+                    max-width: 100%;
+                    display: block;
+                    background-size: cover;
+                    background-position: center;
+                }
+            }
+      }
+      .post-info-col {
+
+          .post-type {
+            > a {
+              display: inline-block;
+              background-color: $salmon;
+              padding: 5px 6px;
+              color: $sand;
+              text-transform: uppercase;
+              font-size: 12px;
+              line-height: 12px;
+              transition: background-color 0.2s ease-out;
+              &:hover {
+                text-decoration: none;
+                background-color: $sherbert;
+              }
+            }
+          }
+          h4 {
+            margin-bottom: 0px;
+            > a {
+              font-size: 24px;
+              font-family: 'Lato', serif;
+
+              color: $brown;
+              &:hover {
+                text-decoration: none;
+              }
+
+            }
+          }
+
+          small {
+            margin: 5px 12px 5px 0px;
+            display: inline-block;
+            position: relative;
+            &:after {
+              content: '';
+              position: absolute;
+              height: 4px;
+              width: 4px;
+              border-radius: 10px;
+              background-color: $brown;
+              right: -10px;
+              top: 50%;
+              transform: translateY(-20%);
+            }
+          }
+      }
+    }
+  }
+}

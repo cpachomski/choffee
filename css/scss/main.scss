@@ -2,10 +2,22 @@
 @import 'normalize';
 @import 'partials/header';
 @import 'partials/desktop-nav';
+@import 'partials/latest-posts';
+@import 'partials/helpers';
+@import 'partials/newsletter-signup';
 
 
 
 html,  body {
   margin-top: 0px !important;
 }
+
+.content {
+  padding: 50px 0px;
+  background-color: $sand;
+  z-index: -2;
+
+
+}
+
 

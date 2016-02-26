@@ -8,16 +8,17 @@ nav.desktop {
       &:after {
         position: absolute;
         content: '';
-        height: 2px;
-        background-color: $salmon;
+        height: 4px;
+        background-color: $brown;
         width: 100%;
-        bottom: -2px;
+        bottom: -4px;
         left: 0px;
       }
 
     > ul {
       text-align: center;
       padding: 5px 0px;
+      margin-bottom: 0px;
 
       > li {
         display: inline-block;
@@ -46,9 +47,6 @@ nav.desktop {
             background-color: $salmon
           }
 
-          > a {
-            color: $salmon;
-          }
         }
 
 
@@ -109,6 +107,7 @@ nav.desktop {
           transition: color 0.3s ease-in;
           &:hover, &:focus {
             color: $salmon;
+            text-decoration: none;
           }
         }
       }
